@@ -682,7 +682,7 @@ function TrustedBySection() {
                 alt={client.name}
                 title={client.name}
                 style={{ maxHeight: 56, maxWidth: 160, width: 'auto', height: 'auto', objectFit: 'contain' }}
-                className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                className="opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
