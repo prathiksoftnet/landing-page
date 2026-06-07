@@ -70,7 +70,7 @@ function OEMPartnerBar() {
               key={p.name}
               src={`/assets/images/partners/${p.file}.svg`}
               alt={p.name}
-              className="h-8 md:h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
               onError={(e) => {
                 const span = document.createElement('span');
                 span.className = 'text-sm font-bold text-gray-400 uppercase tracking-wider';

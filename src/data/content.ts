@@ -1485,7 +1485,6 @@ export const CLIENT_LOGOS = [
 // ============================================================
 
 export const NAV_ITEMS = [
-  { label: 'Home', path: '/' },
   {
     label: 'About',
     path: '/about',
@@ -1507,7 +1506,6 @@ export const NAV_ITEMS = [
     ],
   },
   { label: 'Industries', path: '/industries' },
-  { label: 'Contact', path: '/contact' },
 ];
 
 // ============================================================
