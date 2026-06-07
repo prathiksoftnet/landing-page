@@ -1464,20 +1464,20 @@ Every one of these mistakes is preventable with proper planning, design, and ope
 // ============================================================
 
 export const CLIENT_LOGOS = [
-  { name: 'Pravaig Dynamics', logo: '/pravaig.png' },
-  { name: 'Pravaig Energy', logo: '/pravaig-energy.png' },
-  { name: 'Atima', logo: '/Atima.png' },
-  { name: 'Angus', logo: '/angus.png' },
-  { name: 'Ciel', logo: '/ciel.png' },
-  { name: 'Flip', logo: '/flip.png' },
-  { name: 'IndiaMart', logo: '/indiamart.png' },
-  { name: 'Lawcubator', logo: '/lawcubator.png' },
-  { name: 'Sudaiva', logo: '/sudaiva.png' },
-  { name: 'Swift', logo: '/swift.png' },
-  { name: 'SyncPeople', logo: '/syncpeople.png' },
-  { name: 'Tavant', logo: '/tavant.png' },
-  { name: 'ZS', logo: '/zs.png' },
   { name: 'Pice', logo: '/pice.png' },
+  { name: 'ZS', logo: '/zs.png' },
+  { name: 'Tavant', logo: '/tavant.png' },
+  { name: 'SyncPeople', logo: '/syncpeople.png' },
+  { name: 'Swift', logo: '/swift.png' },
+  { name: 'Sudaiva', logo: '/sudaiva.png' },
+  { name: 'Lawcubator', logo: '/lawcubator.png' },
+  { name: 'IndiaMart', logo: '/indiamart.png' },
+  { name: 'Flip', logo: '/flip.png' },
+  { name: 'Ciel', logo: '/ciel.png' },
+  { name: 'Angus', logo: '/angus.png' },
+  { name: 'Atima', logo: '/Atima.png' },
+  { name: 'Pravaig Energy', logo: '/pravaig-energy.png' },
+  { name: 'Pravaig Dynamics', logo: '/pravaig.png' },
 ];
 
 // ============================================================
