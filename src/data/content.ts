@@ -8,9 +8,9 @@ export const COMPANY = {
   founded: 2018,
   phone: '+91 7019555245',
   phoneDisplay: '+91 70195 55245',
-  email: 'prathiknadig4@gmail.com',
+  email: 'prathik@prathiksoftnet.com',
   website: 'https://prathiksoftnet.com',
-  whatsapp: 'https://wa.me/917019555245',
+  whatsapp: 'https://wa.me/919901314389',
   linkedin: 'https://linkedin.com/company/prathik-softnet',
   founder: 'Prathik P Nadig',
   addresses: {
