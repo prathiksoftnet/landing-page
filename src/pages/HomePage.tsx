@@ -52,7 +52,7 @@ function HeroSection() {
 function OEMPartnerBar() {
   const partners = [
     { name: 'Dell Technologies', file: 'dell' },
-    { name: 'HPE', file: 'hpe' },
+    { name: 'HP', src: '/hp.jpg' },
     { name: 'Cisco', file: 'cisco' },
     { name: 'Lenovo', file: 'lenovo' },
     { name: 'Intel', file: 'intel' },
@@ -68,7 +68,7 @@ function OEMPartnerBar() {
           {partners.map((p) => (
             <img
               key={p.name}
-              src={`/assets/images/partners/${p.file}.svg`}
+              src={p.src ?? `/assets/images/partners/${p.file}.svg`}
               alt={p.name}
               className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
               onError={(e) => {
