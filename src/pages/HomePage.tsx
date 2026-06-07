@@ -680,9 +680,9 @@ export default function HomePage() {
     <>
       <PageMeta title={SEO.home.title} description={SEO.home.description} canonical="https://prathiksoftnet.com/" />
       <HeroSection />
-      <OEMPartnerBar />
-      <TrustedBySection />
       <StatsSection />
+      <TrustedBySection />
+      <OEMPartnerBar />
       <ServicesSection />
       <WhyUsSection />
       <ProductsPreview />
