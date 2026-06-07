@@ -101,7 +101,7 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
 
 function StatsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {STATS.map((stat) => (
@@ -636,7 +636,7 @@ function FinalCTA() {
 function TrustedBySection() {
   const doubled = [...CLIENT_LOGOS, ...CLIENT_LOGOS];
   return (
-    <section className="py-12 bg-white border-b border-gray-100 overflow-hidden">
+    <section className="py-8 bg-white border-b border-gray-100 overflow-hidden">
       <p className="text-center text-xs font-semibold text-secondary-400 uppercase tracking-widest mb-8">
         Trusted by Leading Enterprises
       </p>
