@@ -35,30 +35,25 @@ export default function ContactPage() {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
     setSubmitting(true);
 
-    const subject = encodeURIComponent(`Website Inquiry from ${form.name}`);
-    const bodyParts = [
-      `Name: ${form.name}`,
-      `Email: ${form.email}`,
-      `Phone: ${form.phone}`,
-      form.company ? `Company: ${form.company}` : '',
-      form.industry ? `Industry: ${form.industry}` : '',
-      form.services.length ? `Services: ${form.services.join(', ')}` : '',
-      form.budget ? `Budget: ${form.budget}` : '',
-      `Preferred Contact: ${form.contactMethod}`,
-      '',
-      `Requirements:`,
-      form.description,
-    ].filter(Boolean).join('\n');
-    const body = encodeURIComponent(bodyParts);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
 
-    window.location.href = `mailto:${COMPANY.email}?subject=${subject}&body=${body}`;
-    setSubmitted(true);
-    setSubmitting(false);
+      if (!res.ok) throw new Error('Failed');
+      setSubmitted(true);
+    } catch {
+      alert('Something went wrong. Please try again or email us directly at prathik@prathiksoftnet.com');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleServiceToggle = (service: string) => {
