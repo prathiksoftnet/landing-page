@@ -118,6 +118,12 @@ export default function Header() {
                 <Icons.phone size={16} />
                 <span>{COMPANY.phoneDisplay}</span>
               </a>
+              <Link
+                to="/contact"
+                className="px-5 py-2.5 bg-primary-500 text-white text-sm font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-sm"
+              >
+                Request Quote
+              </Link>
             </div>
 
             {/* Mobile Toggle */}
@@ -188,6 +194,12 @@ export default function Header() {
                   <Icons.phone size={18} />
                   {COMPANY.phoneDisplay}
                 </a>
+                <Link
+                  to="/contact"
+                  className="block w-full text-center px-5 py-3 bg-primary-500 text-white font-semibold rounded-lg"
+                >
+                  Request Quote
+                </Link>
               </div>
             </div>
           </div>
