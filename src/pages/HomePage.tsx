@@ -43,29 +43,6 @@ function HeroSection() {
               {HERO.home.cta2}
             </Link>
           </div>
-          <div className="mt-12 flex items-center gap-6 flex-wrap">
-            {[
-              { name: 'Dell', file: 'dell' },
-              { name: 'HPE', file: 'hpe' },
-              { name: 'Cisco', file: 'cisco' },
-              { name: 'Lenovo', file: 'lenovo' },
-            ].map((p) => (
-              <img
-                key={p.name}
-                src={`/assets/images/partners/${p.file}.svg`}
-                alt={`${p.name} Partner`}
-                className="h-6 w-auto opacity-50 hover:opacity-80 transition-opacity brightness-200"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  const span = document.createElement('span');
-                  span.className = 'text-gray-400 text-sm font-medium tracking-wider uppercase';
-                  span.textContent = p.name;
-                  e.currentTarget.parentElement!.appendChild(span);
-                }}
-              />
-            ))}
-            <span className="text-gray-500 text-sm">& more</span>
-          </div>
         </div>
       </div>
     </section>
