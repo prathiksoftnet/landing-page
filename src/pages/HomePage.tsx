@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   HERO, STATS, SOLUTIONS, PRODUCTS, INDUSTRIES, TESTIMONIALS,
-  WHY_CHOOSE_US, PARTNERS, CASE_STUDIES, BLOG_POSTS, COMPANY, SEO, CLIENT_NAMES
+  WHY_CHOOSE_US, PARTNERS, CASE_STUDIES, BLOG_POSTS, COMPANY, SEO, CLIENT_LOGOS
 } from '@/data/content';
 import { Icons, getIcon } from '@/utils/icons';
 import { useScrollAnimation, useCountUp } from '@/hooks/useScrollAnimation';
@@ -657,23 +657,43 @@ function FinalCTA() {
 }
 
 function TrustedBySection() {
+  const doubled = [...CLIENT_LOGOS, ...CLIENT_LOGOS];
   return (
-    <section className="py-12 bg-white border-b border-gray-100">
-      <div className="container-custom">
-        <p className="text-center text-xs font-semibold text-secondary-400 uppercase tracking-widest mb-8">
-          Trusted by Leading Enterprises
-        </p>
-        <div className="flex justify-center items-center gap-12 flex-wrap">
-          {CLIENT_NAMES.map((client) => (
-            <span
-              key={client}
-              className="text-xl font-semibold text-secondary-300 hover:text-secondary-500 transition-colors"
+    <section className="py-12 bg-white border-b border-gray-100 overflow-hidden">
+      <p className="text-center text-xs font-semibold text-secondary-400 uppercase tracking-widest mb-8">
+        Trusted by Leading Enterprises
+      </p>
+      <div className="relative w-full">
+        <div
+          className="flex items-center gap-16"
+          style={{
+            animation: 'marquee 30s linear infinite',
+            width: 'max-content',
+          }}
+        >
+          {doubled.map((client, i) => (
+            <div
+              key={`${client.name}-${i}`}
+              className="flex-shrink-0 flex items-center justify-center"
+              style={{ height: 56, minWidth: 120 }}
             >
-              {client}
-            </span>
+              <img
+                src={client.logo}
+                alt={client.name}
+                title={client.name}
+                style={{ maxHeight: 56, maxWidth: 160, width: 'auto', height: 'auto', objectFit: 'contain' }}
+                className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
           ))}
         </div>
       </div>
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </section>
   );
 }

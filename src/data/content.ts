@@ -1463,10 +1463,20 @@ Every one of these mistakes is preventable with proper planning, design, and ope
 // CLIENT LOGOS (for marquee)
 // ============================================================
 
-export const CLIENT_NAMES = [
-  'Pravaig Dynamics',
-  'Pravaig Energy',
-  'Atima',
+export const CLIENT_LOGOS = [
+  { name: 'Pravaig Dynamics', logo: '/pravaig.png' },
+  { name: 'Pravaig Energy', logo: '/pravaig energy.png' },
+  { name: 'Atima', logo: '/Atima.png' },
+  { name: 'Angus', logo: '/angus - Copy.png' },
+  { name: 'Ciel', logo: '/ciel logo - Copy.png' },
+  { name: 'Flip', logo: '/Flip logo - Copy.png' },
+  { name: 'IndiaMart', logo: '/indiamart.png' },
+  { name: 'Lawcubator', logo: '/lawcubator logo - Copy.png' },
+  { name: 'Sudaiva', logo: '/sudaiva.png' },
+  { name: 'Swift', logo: '/swift logo - Copy.png' },
+  { name: 'SyncPeople', logo: '/syncpeople - Copy.png' },
+  { name: 'Tavant', logo: '/tavant - Copy.png' },
+  { name: 'ZS', logo: '/zs.png' },
 ];
 
 // ============================================================
