@@ -1477,6 +1477,7 @@ export const CLIENT_LOGOS = [
   { name: 'SyncPeople', logo: '/syncpeople.png' },
   { name: 'Tavant', logo: '/tavant.png' },
   { name: 'ZS', logo: '/zs.png' },
+  { name: 'Pice', logo: '/pice.png' },
 ];
 
 // ============================================================
